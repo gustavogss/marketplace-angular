@@ -9,12 +9,13 @@ import { Film } from '../list-films/film-module';
 export class CheckoutService {
   public baseUrl: string = 'http://localhost:3001';
   public listFilm: Film[]= [];
+  private _priceHandler:number = 0;
 
   constructor(private httpClient: HttpClient) {
 
    }
 
-   getListFilms(): Observable<Film> {
-     return this.httpClient.get<Film>(this.baseUrl+'/films')
+   getListFilms(): Observable<Film[]> {
+     return this.httpClient.get<Film[]>(this.baseUrl+'/films')
    }
 }
