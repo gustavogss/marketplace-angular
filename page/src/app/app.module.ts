@@ -9,15 +9,21 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { ListFilmsComponent } from './views/list-films/list-films.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { SelectButtonComponent } from './components/template/select-button/select-button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClientModule } from '@angular/common/http';
-import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { SelectButtonComponent } from './components/template/select-button/select-button.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatBadgeModule } from '@angular/material/badge';
+import { CheckoutComponent } from './views/checkout/checkout.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +34,8 @@ import { SelectButtonComponent } from './components/template/select-button/selec
     HomeComponent,
     CardFilmComponent,
     ListFilmsComponent,
-    SelectButtonComponent
+    SelectButtonComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,11 @@ import { SelectButtonComponent } from './components/template/select-button/selec
     MatCardModule,
     HttpClientModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatBadgeModule
 
   ],
   providers: [],
