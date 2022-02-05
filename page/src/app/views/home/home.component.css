@@ -1,22 +1,30 @@
-.home .title{
+.home .title {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
-.mat-card-content{
+.mat-card-content {
   margin-top: 50px;
   text-align: center;
 }
 
-.film{
-width: 150px;
+.film {
+  width: 100;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.film:hover {
+  opacity: 1;
+}
+
+.description-film{
+  font-size: 1.1rem;
 }
 
 @media screen and(min-width: 768px) {
-
-  .film{
+  .film {
     width: 450px;
   }
-
 }

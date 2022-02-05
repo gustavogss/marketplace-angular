@@ -1,6 +1,9 @@
 .card-header-image {
-  background-image: url(https://www.github.com/dianamartine.png);
+  background-image: url(https://www.github.com/gustavogss.png);
   background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -21,3 +24,16 @@
 .mat-card-content {
   text-align: left;
 }
+
+.image-github{
+  width: 100px;
+}
+
+.mat-profile{
+  margin-top: 1rem;
+}
+
+.mat-dev{
+  margin-top: 1rem;
+}
+
